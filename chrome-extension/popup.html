@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>DeepSeek Chat Exporter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>DeepSeek对话导出工具</h2>
+    <div class="options">
+      <label>
+        <input type="checkbox" id="includeCode" checked>
+        包含代码块
+      </label>
+      <label>
+        <input type="checkbox" id="includeImages" checked>
+        包含图片
+      </label>
+      <label>
+        <input type="checkbox" id="includeThinking" checked>
+        包含思考过程
+      </label>
+    </div>
+    <button id="exportBtn" class="export-button">导出为PDF</button>
+    <div id="status" class="status"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 
