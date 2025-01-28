@@ -29,7 +29,7 @@
 
 1. Download the repository
    ```bash
-   git clone https://github.com/aofenghanyue/deepseek-chat-exporter.git
+   git clone https://github.com/aofenghanyue/extractDeepTalk.git
    ```
 
 2. Open Chrome Extensions page
@@ -129,7 +129,7 @@ A: Check if the icon files in the icons folder are complete. You can replace the
 
 ## 📞 Contact
 
-- Submit Issues: [GitHub Issues](https://github.com/your-username/deepseek-chat-exporter/issues)
+- Submit Issues: [GitHub Issues](https://github.com/aofenghanyue/extractDeepTalk/issues)
 
 ---
 *Note: This project is not affiliated with DeepSeek. It's just a tool to help users export their conversations.* 
