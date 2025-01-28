@@ -29,7 +29,7 @@
 
 1. Download the repository
    ```bash
-   git clone https://github.com/your-username/deepseek-chat-exporter.git
+   git clone https://github.com/aofenghanyue/deepseek-chat-exporter.git
    ```
 
 2. Open Chrome Extensions page

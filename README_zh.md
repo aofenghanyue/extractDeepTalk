@@ -29,7 +29,7 @@
 
 1. 下载本仓库代码
    ```bash
-   git clone https://github.com/your-username/deepseek-chat-exporter.git
+   git clone https://github.com/aofenghanyue/deepseek-chat-exporter.git
    ```
 
 2. 打开Chrome浏览器，进入扩展程序页面
@@ -155,7 +155,8 @@ A: 请检查icons文件夹中的图标文件是否完整。如果不完整，可
 
 - 提交Issue: [GitHub Issues](https://github.com/aofenghanyue/deepseek-chat-exporter/issues)
 - 微信公众号: 怎么可能
-![公众号](./pics/zmknQR.png)
+
+![公众号](./pics/zmknQR.jpg)
 ![公众号](./pics/zmkn.png)
 
 ---
