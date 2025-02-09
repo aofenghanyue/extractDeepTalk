@@ -427,14 +427,27 @@ async function handleExport(options) {
           content.querySelectorAll('pre, code, [class*="code"]').forEach(el => el.remove());
         } else {
           content.querySelectorAll('pre, code, [class*="code"]').forEach(el => {
-            el.style.backgroundColor = '#f6f8fa';
-            el.style.padding = '16px';
-            el.style.borderRadius = '6px';
-            el.style.fontFamily = 'Consolas, Monaco, "Courier New", monospace';
-            el.style.whiteSpace = 'pre-wrap';
-            el.style.fontSize = '14px';
-            el.style.lineHeight = '1.45';
-            el.style.border = '1px solid #e1e4e8';
+            // 移除语言标签和复制按钮的多余边框
+            if (el.classList.contains('md-code-block-banner-wrap') ||
+              el.classList.contains('md-code-block-action')) {
+              el.remove(); // 直接移除操作栏
+              return;
+            }
+
+            // 仅保留代码区域的样式
+            if (el.tagName === 'PRE') {
+              el.style.cssText = `
+                background: #f6f8fa !important;
+                padding: 12px !important;
+                border-radius: 6px !important;
+                margin: 8px 0 !important;
+                border: 1px solid #e1e4e8 !important;
+                font-family: Consolas, Monaco, "Courier New", monospace !important;
+                font-size: 14px !important;
+                overflow-x: auto !important;
+              `;
+            }
+            
           });
         }
 
@@ -535,7 +548,7 @@ async function handleExport(options) {
         font-size: 15px;
       }
       .content-wrapper > * {
-        margin: 8px 0;
+        margin: 6px 0;
       }
       .content-wrapper p {
         line-height: 1.6;
@@ -550,12 +563,22 @@ async function handleExport(options) {
         border-left: 3px solid #ddd;
         background: #f8f9fa;
       }
+      .md-code-block {
+        border: none !important; /* 移除外层边框 */
+        padding: 0 !important;
+      }
+      .md-code-block pre {
+        border: 1px solid #e1e4e8 !important; /* 仅保留代码区域边框 */
+      }
       pre {
-        margin: 15px 0;
+        margin: 8px 0;
         overflow-x: auto;
+        line-height: 1.4 !important;
       }
       code {
         font-size: 14px;
+        margin: 0 3px !important;
+        padding: 2 4px !important;
       }
       img {
         border-radius: 4px;
