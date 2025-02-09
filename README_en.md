@@ -41,7 +41,7 @@
 
 4. Load the Extension
    - Click "Load unpacked"
-   - Select the repository directory
+   - Select the repository directory chrome-extension folder
 
 ## 🎮 Usage
 
