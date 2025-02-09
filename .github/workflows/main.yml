@@ -32,4 +32,4 @@ jobs:
         with:
           tag: ${{ env.VERSION }}
           name: v${{ env.VERSION }}
-          files: chrome-extension.zip
+          artifacts: chrome-extension.zip
