@@ -20,7 +20,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 });
 
 
-const DEBUG_CONTAINER = true; // 一键开关，设为false关闭容器调试信息
+let DEBUG_CONTAINER = false; // 一键开关，设为false关闭容器调试信息
 let temp_a = 0;
 
 async function handleExport(options) {
